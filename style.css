@@ -27,6 +27,7 @@
 a, ul, li {
     text-decoration: none;
     list-style: none;
+    color: var(--test1);
 }
 nav {
     background-color: var(--test5);
