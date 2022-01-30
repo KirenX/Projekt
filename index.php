@@ -25,26 +25,6 @@
         </div>
     </nav>
     <main>
-        <div class="container">
-            <div class="formularz">
-            <h2>TEST</h2>
-            <form action="index.php" method="post">
-                <input type="text" name="autor_posta"><br>
-                <input type="text" name="tresc_posta"><br>
-                <input type="submit" value="opublikuj">
-                <?php
-                $autor =  $_POST['autor_posta'];
-                $tresc = $_POST['tresc_posta'];
-                if(isset($autor) && isset($tresc)){
-                    echo "dziala";
-                }
-                else {
-                    echo "wypelnij wszystkie pola";
-                }
-                ?>
-            </form>
-        </div>
-        </div>
     </main>
 </body>
 
