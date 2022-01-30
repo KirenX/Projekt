@@ -15,34 +15,72 @@
     align-items: center;
 }
 :root{
-    --test1: #CB91F2;
-    --test2: #D7AEF2;
-    --test3: #1C1973;
-    --test4: #5550F2;
-    --test5: #0D0D0D;
+    --font: hsla(0,0%,100%,.7);
+    --font-inactivate: rgb(131,148,150);
+    --hover: rgb(50,53,59);
+    --main: rgb(54,57,63);
+    --top: rgb(32,34,37);
 }
 /* ^ to ma byc */
-
-/* header */
-a, ul, li {
-    text-decoration: none;
-    list-style: none;
-    color: var(--test1);
+body {
+    background: var(--main);
 }
+/* navbar */
 nav {
-    background-color: var(--test5);
     padding: 20px 20px;
+    background: var(--top);
 }
-nav li {
-    display: inline-block;
-    padding: 0 20px;
+.icons i {
+    padding: 0 15px;
+    color: var(--font);
 }
-
+.icons i:hover, .fa-chevron-down:hover{
+    color: white;
+    transition: all 0.8s ease;
+}
+.user-img-wrapper {
+    text-align: center;
+}
+.fa-chevron-down{
+    color: var(--font);
+}
+.user-link{
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--font);
+}
+/* main */
+.left-sidebar, .right-sidebar{
+    min-width: 13%;
+    min-height: 200px;
+}
+.main{
+    width: 74%;
+}
+main {
+    display: flex;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.card:hover{
+    background-color: var(--hover);
+}
+.card-user{
+    font-size: 30px;
+    color: violet;
+    text-transform: uppercase;
+}
+.card-content{
+    color: var(--font);
+    padding: 10px 10px;
+}
 @media only screen and (max-width: 992px){
 
 }
-@media only screen and (max-width: 768x){
-    
+@media only screen and (max-width: 768px){
 }
 @media only screen and (max-width: 576px){
     
