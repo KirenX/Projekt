@@ -22,18 +22,21 @@ body {
     align-items: center;
 }
 :root{
-    --font: hsla(0,0%,100%,.7);
-    --font-inactivate: rgb(131,148,150);
-    --hover: rgb(50,53,59);
-    --main: rgb(54,57,63);
-    --top: rgb(32,34,37);
-    --frog: rgb(46,204,113);
+    --test1: #CB91F2;
+    --test2: #D7AEF2;
+    --test3: #1C1973;
+    --test4: #5550F2;
+    --test5: #0D0D0D;
 }
 /* ^ to ma byc */
 /* main page / main page / main page / main page  / main page / main page*/
 .main-page {
     width: 1917;
     height: 100vh;
+}
+
+.main-page-hide {
+    display: none;
 }
 
 .bg-video {
@@ -352,13 +355,19 @@ transition: all 1s;
 /* end of modal register */
 /* end of main page / end of  main page / end of  main page / end of  main page*/
 /* feeds page / feeds page / feeds page / feeds page / feeds page / feeds page*/
-=======
->>>>>>> 1905b9aaf3ea326464e040a757d4f04eaaf5285b
+
+.feeds-page {
+    display: none;
+}
+
+.feeds-page-display {
+    display: block;
+}
+
 /* navbar */
 nav {
     padding: 20px 20px;
     background: var(--top);
-<<<<<<< HEAD
 }
 .icons i {
     padding: 0 15px;
@@ -385,34 +394,6 @@ nav {
     min-height: 200px;
     background: var(--hover);
 }
-=======
-}
-.icons i {
-    padding: 0 15px;
-    color: var(--font);
-}
-.icons i:hover, .fa-chevron-down:hover{
-    color: white;
-    transition: all 0.8s ease;
-}
-.user-img-wrapper {
-    text-align: center;
-}
-.fa-chevron-down{
-    color: var(--font);
-}
-.user-link{
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--font);
-}
-/* main */
-.left-sidebar, .right-sidebar{
-    min-width: 13%;
-    min-height: 200px;
-    background: var(--hover);
-}
->>>>>>> 1905b9aaf3ea326464e040a757d4f04eaaf5285b
 .left-sidebar-content{
     padding: 10px 10px;
 }
@@ -452,19 +433,13 @@ main {
     border: none;
     outline: none;
 }
-<<<<<<< HEAD
 
 /* end of feeds page / end of feeds page / end of feeds page / end of feeds page*/
-=======
->>>>>>> 1905b9aaf3ea326464e040a757d4f04eaaf5285b
 @media only screen and (max-width: 992px){
 
 }
 @media only screen and (max-width: 768px){
-<<<<<<< HEAD
     
-=======
->>>>>>> 1905b9aaf3ea326464e040a757d4f04eaaf5285b
 }
 @media only screen and (max-width: 576px){
     

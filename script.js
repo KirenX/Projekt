@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const modalBtn = document.querySelector('.btn-top');
 const modal = document.querySelector('.modal');
 const modalWrapper = document.querySelector('.modal-wrapper');
@@ -8,7 +7,9 @@ const modalRegisterWrapper = document.querySelector('.modal-register-wrapper');
 const modalRegisterFooterBtn = document.querySelector('.footer-register-text');
 const h2Wrapper = document.querySelector('.h2-wrapper');
 const input = document.querySelector('.input');
-
+const mainPage = document.querySelector('.main-page');
+const loginBtn = document.querySelector('.btn-login');
+const feedsPage = document.querySelector('.feeds-page');
 // ****************************************************************************
 // modal
 modalBtn.addEventListener('click', () => 
@@ -44,6 +45,12 @@ input.addEventListener('blur', (e) => {
         changeBorderColor(".2rem solid rgb(23, 82, 172)");
     }
 ;})
-=======
 
->>>>>>> 1905b9aaf3ea326464e040a757d4f04eaaf5285b
+// feeds page display from main page
+
+loginBtn.addEventListener('click', () => 
+{
+    feedsPage.classList.add('feeds-page-display');
+    mainPage.classList.add('main-page-hide');
+});
+
