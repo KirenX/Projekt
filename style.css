@@ -29,14 +29,15 @@ body {
     --test5: #0D0D0D;
 }
 /* ^ to ma byc */
-/* main page / main page / main page / main page  / main page / main page*/
+/* main page */
 .main-page {
     width: 1917;
     height: 100vh;
+    display: none;
 }
 
 .main-page-hide {
-    display: none;
+    /*  */
 }
 
 .bg-video {
@@ -353,15 +354,15 @@ transition: all 1s;
     
 
 /* end of modal register */
-/* end of main page / end of  main page / end of  main page / end of  main page*/
-/* feeds page / feeds page / feeds page / feeds page / feeds page / feeds page*/
+/* end of main page */
+/* feeds page */
 
 .feeds-page {
-    display: none;
+    /* display: none; */
 }
 
 .feeds-page-display {
-    display: block;
+    /* display: block; */
 }
 
 /* navbar */
@@ -434,7 +435,7 @@ main {
     outline: none;
 }
 
-/* end of feeds page / end of feeds page / end of feeds page / end of feeds page*/
+/* end of feeds page*/
 @media only screen and (max-width: 992px){
 
 }
