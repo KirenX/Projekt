@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+html {
+    font-size:62.5%
+}
+
+body {
+    background-color:#f0f8fd ;
 }
 .container {
     width: 100%;
@@ -10,7 +18,6 @@
     margin: 0 auto;
 }
 .d-flex{
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -22,25 +29,403 @@
     --test5: #0D0D0D;
 }
 /* ^ to ma byc */
-
-/* header */
-a, ul, li {
-    text-decoration: none;
-    list-style: none;
+/* main page / main page / main page / main page  / main page / main page*/
+.main-page {
+    width: 1917;
+    height: 100vh;
 }
+
+.bg-video {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.login {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 3rem;
+    margin-right: 3rem;
+}
+
+.btn-top {
+    color: hsla(0,0%,100%,.7);
+    font-size: 1.6rem;
+    width: 12rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    background-color: rgb(59, 165, 93);
+    border: .1rem solid rgb(32, 34, 37);
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    transition: all .3s;
+}
+
+.btn-top:hover {
+    background-color:rgb(45, 125, 70);
+    color: #fff;
+}
+/* modal login */
+.modal-wrapper {
+position: fixed;
+background-color: rgba(0, 0, 0, .5);
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+opacity: 0;
+visibility: hidden;
+transition: all 1s;
+}
+
+.modal-wrapper-display {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    width: 40rem;
+    background-color: rgb(54,57,63);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-img {
+    grid-column: 1/-1;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.login-form {
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    justify-content: center;
+}
+
+.login-form input {
+    width: 30rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: .2rem solid rgb(23, 82, 172);
+    border-radius: 1.5rem;
+    background-color: rgb(32, 34, 37);
+    color: rgb(168, 166, 166);
+    transition: all .15s;
+}
+
+.login-form input:focus {
+    border: .3rem solid rgb(88, 101, 242);
+    color: #eee;
+    background-color: rgb(33, 33, 37);
+}
+
+.login-form input::placeholder {
+    color: rgb(109, 107, 107);
+}
+
+.login-form input:focus::placeholder {
+    color: rgb(158, 154, 154);
+}
+
+.modal-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.modal-button {
+    width: 14rem;
+    height: 4rem;
+    border-radius: 1rem;
+    color: #eee;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: all .3s;
+}
+
+.modal-button:hover {
+    color: #fff;
+}
+
+.btn-signup {
+    margin-right: 1rem;
+    background-color: rgb(99, 111, 243);
+    border: .1rem solid rgb(88, 101, 242);
+}
+
+.btn-signup:hover {
+    background-color: rgb(87, 98, 218);
+}
+
+.btn-login {
+    margin-left: 1rem;
+    background-color: rgb(64, 163, 96);
+    border: .1rem solid rgb(59, 165, 93);
+}
+
+.btn-login:hover {
+    background-color: rgb(56, 146, 85);
+}
+
+.modal-footer {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer p {
+    color: rgb(156, 154, 154);
+}
+/* end of modal login */
+
+/* modal register */
+.modal-register-wrapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    }
+    
+    .modal-register-wrapper-display {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .modal-register {
+        width: 40rem;
+        height: 514px;
+        background-color: rgb(54,57,63);
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 1.5rem;
+        display: none;
+    }
+    .modal-register-display {
+         display: block;
+    }
+
+    .modal-register-header {
+        display: grid;
+        justify-content: center;
+    }
+    .h2-wrapper {
+        width: 30rem;
+        margin-top: 3rem;
+    }
+
+    .h2-wrapper h2 {
+        font-size: 2.9rem;
+        color: #eee;
+        overflow: hidden;
+        border-right: .30rem solid rgb(170, 168, 168);
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: 
+        typing 3.5s steps(144, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    .h2-animation {
+        display: block;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(202, 199, 199); }
+    }
+    
+    .modal-register-content {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .modal-register-content input {
+        width: 30rem;
+        height: 5rem;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        border: .2rem solid rgb(23, 82, 172);
+        border-radius: 1.5rem;
+        background-color: rgb(32, 34, 37);
+        color: rgb(168, 166, 166);
+        transition: all .15s;
+    }
+
+    .modal-register-content input:focus {
+        border: .3rem solid rgb(88, 101, 242);
+        color: #eee;
+        background-color: rgb(33, 33, 37);
+    }
+    
+    .modal-register-content input::placeholder {
+        color: rgb(109, 107, 107);
+    }
+    
+    .modal-register-content input:focus::placeholder {
+        color: rgb(158, 154, 154);
+    }
+
+    .modal-register-button {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-register-button button {
+            width: 22.5rem;
+            height: 4rem;
+            border-radius: 1rem;
+            color: #eee;
+            cursor: pointer;
+            font-size: 1.6rem;
+    }
+
+    .modal-register-button button {
+        background-color: rgb(99, 111, 243);
+        border: .1rem solid rgb(88, 101, 242);
+    }
+    
+    .modal-register-button button:hover {
+        background-color: rgb(87, 98, 218);
+    }
+
+    .modal-register-footer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .modal-register-footer p {
+        font-size: 1.3rem;
+        color: rgb(167, 164, 164);
+        cursor: pointer;
+    }
+
+    .green {
+        border: .5rem solid green;
+    }
+    
+
+/* end of modal register */
+/* end of main page / end of  main page / end of  main page / end of  main page*/
+/* feeds page / feeds page / feeds page / feeds page / feeds page / feeds page*/
+/* navbar */
 nav {
-    background-color: var(--test5);
     padding: 20px 20px;
+    background: var(--top);
 }
-nav li {
-    display: inline-block;
-    padding: 0 20px;
+.icons i {
+    padding: 0 15px;
+    color: var(--font);
+}
+.icons i:hover, .fa-chevron-down:hover{
+    color: white;
+    transition: all 0.8s ease;
+}
+.user-img-wrapper {
+    text-align: center;
+}
+.fa-chevron-down{
+    color: var(--font);
+}
+.user-link{
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--font);
+}
+/* main */
+.left-sidebar, .right-sidebar{
+    min-width: 13%;
+    min-height: 200px;
+    background: var(--hover);
+}
+.left-sidebar-content{
+    padding: 10px 10px;
+}
+.left-sidebar-content p, a{
+    text-decoration: none;
+    padding: 10px 0;
+    color: var(--font);
+}
+.main{
+    width: 74%;
+}
+main {
+    display: flex;
+    background: var(--main);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.card:hover{
+    background-color: var(--hover);
+}
+.card-user{
+    font-size: 15px;
+    color: var(--frog);
+    text-transform: uppercase;
+}
+.card-content{
+    color: var(--font);
+    padding: 10px 10px;
+}
+#dodaj{
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
 }
 
+/* end of feeds page / end of feeds page / end of feeds page / end of feeds page*/
 @media only screen and (max-width: 992px){
 
 }
-@media only screen and (max-width: 768x){
+@media only screen and (max-width: 768px){
     
 }
 @media only screen and (max-width: 576px){
