@@ -32,7 +32,15 @@
         </div>
     </nav>
     <main>
-        <div class="left-sidebar"></div>
+        <div class="left-sidebar">
+            <div class="left-sidebar-content">
+                <p><a href="#">Wydarzenia</a></p>
+                <p><a href="#">#cyrk</a></p>
+                <p><a href="#">#bot</a></p>
+                <p><a href="#">#azjatki</a></p>
+                <p><a href="#">#quality-memuchy</a></p>
+            </div>
+        </div>
         <div class="main">
             <div class="container">
             <?php
@@ -51,8 +59,8 @@
                 }
             ?>
                 <form action="script.php" method="post">
-                    <input type="text" name="autor"><br>
-                    <input type="text" name="tresc"><br>
+                    <input type="text" name="autor">
+                    <input type="text" name="tresc" id="dodaj"><br>
                     <input type="submit" value="wyslij">
                 </form>
             </div>
