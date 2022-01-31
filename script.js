@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const modalBtn = document.querySelector('.btn-top');
 const modal = document.querySelector('.modal');
 const modalWrapper = document.querySelector('.modal-wrapper');
@@ -43,3 +44,6 @@ input.addEventListener('blur', (e) => {
         changeBorderColor(".2rem solid rgb(23, 82, 172)");
     }
 ;})
+=======
+
+>>>>>>> 1905b9aaf3ea326464e040a757d4f04eaaf5285b
